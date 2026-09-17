@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.topLeftPictureBox = new System.Windows.Forms.PictureBox();
             this.bottomRightPictureBox = new System.Windows.Forms.PictureBox();
             this.radiusPromptLabel = new System.Windows.Forms.Label();
@@ -45,7 +46,8 @@
             // 
             // topLeftPictureBox
             // 
-            this.topLeftPictureBox.Location = new System.Drawing.Point(20, 20);
+            this.topLeftPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Sphere_and_Ball")));
+            this.topLeftPictureBox.Location = new System.Drawing.Point(12, 12);
             this.topLeftPictureBox.Name = "topLeftPictureBox";
             this.topLeftPictureBox.Size = new System.Drawing.Size(150, 150);
             this.topLeftPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -54,7 +56,8 @@
             // 
             // bottomRightPictureBox
             // 
-            this.bottomRightPictureBox.Location = new System.Drawing.Point(230, 230);
+            this.bottomRightPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Sphere_and_Ball")));
+            this.bottomRightPictureBox.Location = new System.Drawing.Point(220, 205);
             this.bottomRightPictureBox.Name = "bottomRightPictureBox";
             this.bottomRightPictureBox.Size = new System.Drawing.Size(150, 150);
             this.bottomRightPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -64,24 +67,24 @@
             // radiusPromptLabel
             // 
             this.radiusPromptLabel.AutoSize = true;
-            this.radiusPromptLabel.Location = new System.Drawing.Point(185, 32);
+            this.radiusPromptLabel.Location = new System.Drawing.Point(168, 54);
             this.radiusPromptLabel.Name = "radiusPromptLabel";
-            this.radiusPromptLabel.Size = new System.Drawing.Size(95, 13);
+            this.radiusPromptLabel.Size = new System.Drawing.Size(91, 13);
             this.radiusPromptLabel.TabIndex = 2;
             this.radiusPromptLabel.Text = "Radius of sphere:";
             // 
             // radiusTextBox
             // 
-            this.radiusTextBox.Location = new System.Drawing.Point(286, 29);
+            this.radiusTextBox.Location = new System.Drawing.Point(264, 51);
             this.radiusTextBox.Name = "radiusTextBox";
-            this.radiusTextBox.Size = new System.Drawing.Size(85, 20);
+            this.radiusTextBox.Size = new System.Drawing.Size(100, 20);
             this.radiusTextBox.TabIndex = 3;
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(220, 70);
+            this.calculateButton.Location = new System.Drawing.Point(278, 86);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(115, 30);
+            this.calculateButton.Size = new System.Drawing.Size(75, 23);
             this.calculateButton.TabIndex = 4;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
@@ -89,55 +92,55 @@
             // 
             // diameterPromptLabel
             // 
-            this.diameterPromptLabel.Location = new System.Drawing.Point(15, 220);
+            this.diameterPromptLabel.Location = new System.Drawing.Point(15, 201);
             this.diameterPromptLabel.Name = "diameterPromptLabel";
-            this.diameterPromptLabel.Size = new System.Drawing.Size(85, 20);
+            this.diameterPromptLabel.Size = new System.Drawing.Size(65, 20);
             this.diameterPromptLabel.TabIndex = 5;
-            this.diameterPromptLabel.Text = "Diameter:";
+            this.diameterPromptLabel.Text = "Diameter";
             this.diameterPromptLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // diameterOutputLabel
             // 
             this.diameterOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.diameterOutputLabel.Location = new System.Drawing.Point(105, 218);
+            this.diameterOutputLabel.Location = new System.Drawing.Point(86, 199);
             this.diameterOutputLabel.Name = "diameterOutputLabel";
-            this.diameterOutputLabel.Size = new System.Drawing.Size(95, 23);
+            this.diameterOutputLabel.Size = new System.Drawing.Size(100, 23);
             this.diameterOutputLabel.TabIndex = 6;
             this.diameterOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // surfaceAreaPromptLabel
             // 
-            this.surfaceAreaPromptLabel.Location = new System.Drawing.Point(15, 260);
+            this.surfaceAreaPromptLabel.Location = new System.Drawing.Point(12, 246);
             this.surfaceAreaPromptLabel.Name = "surfaceAreaPromptLabel";
-            this.surfaceAreaPromptLabel.Size = new System.Drawing.Size(85, 20);
+            this.surfaceAreaPromptLabel.Size = new System.Drawing.Size(68, 20);
             this.surfaceAreaPromptLabel.TabIndex = 7;
-            this.surfaceAreaPromptLabel.Text = "Surface Area:";
+            this.surfaceAreaPromptLabel.Text = "Surface Area";
             this.surfaceAreaPromptLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // surfaceAreaOutputLabel
             // 
             this.surfaceAreaOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.surfaceAreaOutputLabel.Location = new System.Drawing.Point(105, 258);
+            this.surfaceAreaOutputLabel.Location = new System.Drawing.Point(86, 244);
             this.surfaceAreaOutputLabel.Name = "surfaceAreaOutputLabel";
-            this.surfaceAreaOutputLabel.Size = new System.Drawing.Size(95, 23);
+            this.surfaceAreaOutputLabel.Size = new System.Drawing.Size(100, 23);
             this.surfaceAreaOutputLabel.TabIndex = 8;
             this.surfaceAreaOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // volumePromptLabel
             // 
-            this.volumePromptLabel.Location = new System.Drawing.Point(15, 300);
+            this.volumePromptLabel.Location = new System.Drawing.Point(15, 291);
             this.volumePromptLabel.Name = "volumePromptLabel";
-            this.volumePromptLabel.Size = new System.Drawing.Size(85, 20);
+            this.volumePromptLabel.Size = new System.Drawing.Size(65, 20);
             this.volumePromptLabel.TabIndex = 9;
-            this.volumePromptLabel.Text = "Volume:";
+            this.volumePromptLabel.Text = "Volume";
             this.volumePromptLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // volumeOutputLabel
             // 
             this.volumeOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.volumeOutputLabel.Location = new System.Drawing.Point(105, 298);
+            this.volumeOutputLabel.Location = new System.Drawing.Point(86, 289);
             this.volumeOutputLabel.Name = "volumeOutputLabel";
-            this.volumeOutputLabel.Size = new System.Drawing.Size(95, 23);
+            this.volumeOutputLabel.Size = new System.Drawing.Size(100, 23);
             this.volumeOutputLabel.TabIndex = 10;
             this.volumeOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -146,7 +149,7 @@
             this.AcceptButton = this.calculateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(400, 400);
+            this.ClientSize = new System.Drawing.Size(384, 361);
             this.Controls.Add(this.volumeOutputLabel);
             this.Controls.Add(this.volumePromptLabel);
             this.Controls.Add(this.surfaceAreaOutputLabel);
