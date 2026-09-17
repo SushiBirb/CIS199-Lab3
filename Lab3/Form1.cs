@@ -1,10 +1,8 @@
-﻿// Name: Josh Mattingly
-// Lab: Lab 3
+// Lab 3
+// CIS-199-50
 // Due Date: Sunday, Sep 20 (by 11:59 PM)
-// Course Section: CIS 199-01
-// Description: This Windows Forms application calculates and displays several
-//              geometric values (diameter, surface area, and volume) of a sphere
-//              given its radius entered by the user.
+// Description: Calculates and displays the diameter, surface area, and volume of a sphere based on user entered radius.
+
 
 using System;
 using System.Drawing;
